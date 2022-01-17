@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1D3863527959DDE007F887A /* LifeHacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3863427959DDE007F887A /* LifeHacksApp.swift */; };
+		B1D3863727959DDE007F887A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3863627959DDE007F887A /* ContentView.swift */; };
+		B1D3863927959DDF007F887A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D3863827959DDF007F887A /* Assets.xcassets */; };
+		B1D3863C27959DDF007F887A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D3863B27959DDF007F887A /* Preview Assets.xcassets */; };
+		B1D3864627959DE0007F887A /* LifeHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3864527959DE0007F887A /* LifeHacksTests.swift */; };
+		B1D3865027959DE0007F887A /* LifeHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3864F27959DE0007F887A /* LifeHacksUITests.swift */; };
+		B1D3865227959DE0007F887A /* LifeHacksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3865127959DE0007F887A /* LifeHacksUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1D3864227959DE0007F887A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1D3862927959DDE007F887A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1D3863027959DDE007F887A;
+			remoteInfo = LifeHacks;
+		};
+		B1D3864C27959DE0007F887A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1D3862927959DDE007F887A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1D3863027959DDE007F887A;
+			remoteInfo = LifeHacks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1D3863127959DDE007F887A /* LifeHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D3863427959DDE007F887A /* LifeHacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHacksApp.swift; sourceTree = "<group>"; };
+		B1D3863627959DDE007F887A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1D3863827959DDF007F887A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1D3863B27959DDF007F887A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1D3864127959DE0007F887A /* LifeHacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeHacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D3864527959DE0007F887A /* LifeHacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHacksTests.swift; sourceTree = "<group>"; };
+		B1D3864B27959DE0007F887A /* LifeHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D3864F27959DE0007F887A /* LifeHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHacksUITests.swift; sourceTree = "<group>"; };
+		B1D3865127959DE0007F887A /* LifeHacksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHacksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1D3862E27959DDE007F887A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D3863E27959DE0007F887A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D3864827959DE0007F887A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1D3862827959DDE007F887A = {
+			isa = PBXGroup;
+			children = (
+				B1D3863327959DDE007F887A /* LifeHacks */,
+				B1D3864427959DE0007F887A /* LifeHacksTests */,
+				B1D3864E27959DE0007F887A /* LifeHacksUITests */,
+				B1D3863227959DDE007F887A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1D3863227959DDE007F887A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1D3863127959DDE007F887A /* LifeHacks.app */,
+				B1D3864127959DE0007F887A /* LifeHacksTests.xctest */,
+				B1D3864B27959DE0007F887A /* LifeHacksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1D3863327959DDE007F887A /* LifeHacks */ = {
+			isa = PBXGroup;
+			children = (
+				B1D3863427959DDE007F887A /* LifeHacksApp.swift */,
+				B1D3863627959DDE007F887A /* ContentView.swift */,
+				B1D3863827959DDF007F887A /* Assets.xcassets */,
+				B1D3863A27959DDF007F887A /* Preview Content */,
+			);
+			path = LifeHacks;
+			sourceTree = "<group>";
+		};
+		B1D3863A27959DDF007F887A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1D3863B27959DDF007F887A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1D3864427959DE0007F887A /* LifeHacksTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1D3864527959DE0007F887A /* LifeHacksTests.swift */,
+			);
+			path = LifeHacksTests;
+			sourceTree = "<group>";
+		};
+		B1D3864E27959DE0007F887A /* LifeHacksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1D3864F27959DE0007F887A /* LifeHacksUITests.swift */,
+				B1D3865127959DE0007F887A /* LifeHacksUITestsLaunchTests.swift */,
+			);
+			path = LifeHacksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1D3863027959DDE007F887A /* LifeHacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1D3865527959DE0007F887A /* Build configuration list for PBXNativeTarget "LifeHacks" */;
+			buildPhases = (
+				B1D3862D27959DDE007F887A /* Sources */,
+				B1D3862E27959DDE007F887A /* Frameworks */,
+				B1D3862F27959DDE007F887A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeHacks;
+			productName = LifeHacks;
+			productReference = B1D3863127959DDE007F887A /* LifeHacks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1D3864027959DE0007F887A /* LifeHacksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1D3865827959DE0007F887A /* Build configuration list for PBXNativeTarget "LifeHacksTests" */;
+			buildPhases = (
+				B1D3863D27959DE0007F887A /* Sources */,
+				B1D3863E27959DE0007F887A /* Frameworks */,
+				B1D3863F27959DE0007F887A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1D3864327959DE0007F887A /* PBXTargetDependency */,
+			);
+			name = LifeHacksTests;
+			productName = LifeHacksTests;
+			productReference = B1D3864127959DE0007F887A /* LifeHacksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1D3864A27959DE0007F887A /* LifeHacksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1D3865B27959DE0007F887A /* Build configuration list for PBXNativeTarget "LifeHacksUITests" */;
+			buildPhases = (
+				B1D3864727959DE0007F887A /* Sources */,
+				B1D3864827959DE0007F887A /* Frameworks */,
+				B1D3864927959DE0007F887A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1D3864D27959DE0007F887A /* PBXTargetDependency */,
+			);
+			name = LifeHacksUITests;
+			productName = LifeHacksUITests;
+			productReference = B1D3864B27959DE0007F887A /* LifeHacksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1D3862927959DDE007F887A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B1D3863027959DDE007F887A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B1D3864027959DE0007F887A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B1D3863027959DDE007F887A;
+					};
+					B1D3864A27959DE0007F887A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B1D3863027959DDE007F887A;
+					};
+				};
+			};
+			buildConfigurationList = B1D3862C27959DDE007F887A /* Build configuration list for PBXProject "LifeHacks" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1D3862827959DDE007F887A;
+			productRefGroup = B1D3863227959DDE007F887A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1D3863027959DDE007F887A /* LifeHacks */,
+				B1D3864027959DE0007F887A /* LifeHacksTests */,
+				B1D3864A27959DE0007F887A /* LifeHacksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1D3862F27959DDE007F887A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D3863C27959DDF007F887A /* Preview Assets.xcassets in Resources */,
+				B1D3863927959DDF007F887A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D3863F27959DE0007F887A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D3864927959DE0007F887A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1D3862D27959DDE007F887A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D3863727959DDE007F887A /* ContentView.swift in Sources */,
+				B1D3863527959DDE007F887A /* LifeHacksApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D3863D27959DE0007F887A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D3864627959DE0007F887A /* LifeHacksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D3864727959DE0007F887A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D3865027959DE0007F887A /* LifeHacksUITests.swift in Sources */,
+				B1D3865227959DE0007F887A /* LifeHacksUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1D3864327959DE0007F887A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1D3863027959DDE007F887A /* LifeHacks */;
+			targetProxy = B1D3864227959DE0007F887A /* PBXContainerItemProxy */;
+		};
+		B1D3864D27959DE0007F887A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1D3863027959DDE007F887A /* LifeHacks */;
+			targetProxy = B1D3864C27959DE0007F887A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B1D3865327959DE0007F887A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1D3865427959DE0007F887A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1D3865627959DE0007F887A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeHacks/Preview Content\"";
+				DEVELOPMENT_TEAM = W7ULA4X9L6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abneyservices.LifeHacks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1D3865727959DE0007F887A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeHacks/Preview Content\"";
+				DEVELOPMENT_TEAM = W7ULA4X9L6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abneyservices.LifeHacks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1D3865927959DE0007F887A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7ULA4X9L6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abneyservices.LifeHacksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeHacks.app/LifeHacks";
+			};
+			name = Debug;
+		};
+		B1D3865A27959DE0007F887A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7ULA4X9L6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abneyservices.LifeHacksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeHacks.app/LifeHacks";
+			};
+			name = Release;
+		};
+		B1D3865C27959DE0007F887A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7ULA4X9L6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abneyservices.LifeHacksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeHacks;
+			};
+			name = Debug;
+		};
+		B1D3865D27959DE0007F887A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7ULA4X9L6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abneyservices.LifeHacksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeHacks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1D3862C27959DDE007F887A /* Build configuration list for PBXProject "LifeHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D3865327959DE0007F887A /* Debug */,
+				B1D3865427959DE0007F887A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1D3865527959DE0007F887A /* Build configuration list for PBXNativeTarget "LifeHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D3865627959DE0007F887A /* Debug */,
+				B1D3865727959DE0007F887A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1D3865827959DE0007F887A /* Build configuration list for PBXNativeTarget "LifeHacksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D3865927959DE0007F887A /* Debug */,
+				B1D3865A27959DE0007F887A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1D3865B27959DE0007F887A /* Build configuration list for PBXNativeTarget "LifeHacksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D3865C27959DE0007F887A /* Debug */,
+				B1D3865D27959DE0007F887A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1D3862927959DDE007F887A /* Project object */;
+}
