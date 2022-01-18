@@ -11,9 +11,10 @@
 		B1D3863727959DDE007F887A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3863627959DDE007F887A /* ContentView.swift */; };
 		B1D3863927959DDF007F887A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D3863827959DDF007F887A /* Assets.xcassets */; };
 		B1D3863C27959DDF007F887A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D3863B27959DDF007F887A /* Preview Assets.xcassets */; };
-		B1D3864627959DE0007F887A /* LifeHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3864527959DE0007F887A /* LifeHacksTests.swift */; };
+		B1D3864627959DE0007F887A /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3864527959DE0007F887A /* QuestionTests.swift */; };
 		B1D3865027959DE0007F887A /* LifeHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3864F27959DE0007F887A /* LifeHacksUITests.swift */; };
 		B1D3865227959DE0007F887A /* LifeHacksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3865127959DE0007F887A /* LifeHacksUITestsLaunchTests.swift */; };
+		B1D3865F27959E00007F887A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3865E27959E00007F887A /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +41,11 @@
 		B1D3863827959DDF007F887A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1D3863B27959DDF007F887A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1D3864127959DE0007F887A /* LifeHacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeHacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1D3864527959DE0007F887A /* LifeHacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHacksTests.swift; sourceTree = "<group>"; };
+		B1D3864527959DE0007F887A /* QuestionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
 		B1D3864B27959DE0007F887A /* LifeHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D3864F27959DE0007F887A /* LifeHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHacksUITests.swift; sourceTree = "<group>"; };
 		B1D3865127959DE0007F887A /* LifeHacksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHacksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1D3865E27959E00007F887A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				B1D3863627959DDE007F887A /* ContentView.swift */,
 				B1D3863827959DDF007F887A /* Assets.xcassets */,
 				B1D3863A27959DDF007F887A /* Preview Content */,
+				B1D3865E27959E00007F887A /* Model.swift */,
 			);
 			path = LifeHacks;
 			sourceTree = "<group>";
@@ -113,7 +116,7 @@
 		B1D3864427959DE0007F887A /* LifeHacksTests */ = {
 			isa = PBXGroup;
 			children = (
-				B1D3864527959DE0007F887A /* LifeHacksTests.swift */,
+				B1D3864527959DE0007F887A /* QuestionTests.swift */,
 			);
 			path = LifeHacksTests;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				B1D3862D27959DDE007F887A /* Sources */,
 				B1D3862E27959DDE007F887A /* Frameworks */,
 				B1D3862F27959DDE007F887A /* Resources */,
+				B1D3866027961835007F887A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,11 +256,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B1D3866027961835007F887A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1D3862D27959DDE007F887A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D3865F27959E00007F887A /* Model.swift in Sources */,
 				B1D3863727959DDE007F887A /* ContentView.swift in Sources */,
 				B1D3863527959DDE007F887A /* LifeHacksApp.swift in Sources */,
 			);
@@ -266,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D3864627959DE0007F887A /* LifeHacksTests.swift in Sources */,
+				B1D3864627959DE0007F887A /* QuestionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
