@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-struct User {
-  let name: String
-  let aboutMe: String
+struct User: Equatable {
+  var name: String
+  var aboutMe: String
   let reputation: Int
-  let avatar: UIImage
+  var avatar: UIImage
 }
 
 struct Question {

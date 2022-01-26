@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// MARK: - Int
 extension Int {
   var formatted: String {
     if #available(iOS 15, *) {
@@ -20,6 +21,7 @@ extension Int {
   }
 }
 
+// MARK: - Date
 extension Date {
   var formatted: String {
     if #available(iOS 15, *) {
@@ -32,6 +34,7 @@ extension Date {
   }
 }
 
+// MARK: - Color
 extension Color {
   static var lightBlue: Color {
     Color(UIColor.systemBlue.colorWithOffsets(saturation: -0.5))
@@ -50,6 +53,7 @@ extension Color {
   }
 }
 
+// MARK: - LinearGradient
 extension LinearGradient {
   static var blue: Self { verticalGradient(with: [.lightBlue, .blue]) }
   static var orange: Self { verticalGradient(with: [.lightOrange, .orange]) }
@@ -65,6 +69,7 @@ extension LinearGradient {
   }
 }
 
+// MARK: - UIColor
 extension UIColor {
   var hsba: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat) {
     var hue: CGFloat = 0.0
@@ -89,6 +94,7 @@ extension UIColor {
     }
 }
 
+// MARK: - View
 extension View {
   func blueStyle() -> some View {
     modifier(Style(gradient: .blue))

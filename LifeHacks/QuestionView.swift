@@ -9,12 +9,17 @@ import SwiftUI
 
 // MARK: QuestionView
 struct QuestionView: View {
-  let question: Question
+  @State var question: Question
 
   var body: some View {
     VStack(alignment: .leading, spacing: 24.0) {
       HStack(alignment: .top, spacing: 16.0) {
-        Voting(score: question.score)
+        Voting(
+          score: question.score,
+          vote: .init(vote: question.vote),
+          upvote: { self.question.upvote() },
+          downvote: { self.question.downvote() },
+          unvote: { self.question.upvote() })
         Info(
           title: question.title,
           viewCount: question.viewCount,
@@ -96,15 +101,53 @@ extension QuestionView {
 extension QuestionView {
   struct Voting: View {
     let score: Int
+    let vote: Vote
+    let upvote: () -> Void
+    let downvote: () -> Void
+    let unvote: () -> Void
 
     var body: some View {
       VStack(spacing: 8.0) {
-        VoteButton(buttonType: .up, highlighted: false)
+        VoteButton(
+          buttonType: .up,
+          highlighted:
+            vote == .up,
+          action: { self.vote(.up) })
         Text("\(score)")
           .font(.title)
           .foregroundColor(.secondary)
-        VoteButton(buttonType: .down, highlighted: false)
+        VoteButton(
+          buttonType: .down,
+          highlighted: vote == .down,
+          action: { self.vote(.down) })
       }
+      .frame(minWidth: 56.0)
+    }
+
+    func vote(_ vote: Vote) {
+      switch (self.vote, vote) {
+      case (.none, .up), (.down, .up): upvote()
+      case (.none, .down), (.up, .down): downvote()
+      default: unvote()
+      }
+    }
+  }
+}
+
+extension QuestionView.Voting {
+  enum Vote {
+    case none
+    case up
+    case down
+  }
+}
+
+extension QuestionView.Voting.Vote {
+  init(vote: Question.Vote) {
+    switch vote {
+    case .none: self = .none
+    case .up: self = .up
+    case .down: self = .down
     }
   }
 }
@@ -114,9 +157,10 @@ extension QuestionView.Voting {
   struct VoteButton: View {
     let buttonType: ButtonType
     let highlighted: Bool
+    let action: () -> Void
 
     var body: some View {
-      Button(action: {}) {
+      Button(action: action) {
         buttonType.image(highlighted: highlighted)
           .resizable()
           .frame(width: 32, height: 32)
@@ -163,13 +207,44 @@ struct QuestionView_Previews: PreviewProvider {
           date: question.creationDate,
           tags: question.tags)
           .previewDisplayName("Info")
-        QuestionView.Voting(score: question.score)
-          .previewDisplayName("Voting")
+        HStack {
+          QuestionView.Voting(
+            score: question.score,
+            vote: .none,
+            upvote: {},
+            downvote: {},
+            unvote: {})
+          QuestionView.Voting(
+            score: question.score,
+            vote: .up,
+            upvote: {},
+            downvote: {},
+            unvote: {})
+          QuestionView.Voting(
+            score: question.score,
+            vote: .down,
+            upvote: {},
+            downvote: {},
+            unvote: {})
+        }
+        .previewDisplayName("Voting")
         HStack(spacing: 36) {
-          QuestionView.Voting.VoteButton(buttonType: .up, highlighted: true)
-          QuestionView.Voting.VoteButton(buttonType: .up, highlighted: false)
-          QuestionView.Voting.VoteButton(buttonType: .down, highlighted: true)
-          QuestionView.Voting.VoteButton(buttonType: .down, highlighted: false)
+          QuestionView.Voting.VoteButton(
+            buttonType: .up,
+            highlighted: true,
+            action: {})
+          QuestionView.Voting.VoteButton(
+            buttonType: .up,
+            highlighted: false,
+            action: {})
+          QuestionView.Voting.VoteButton(
+            buttonType: .down,
+            highlighted: true,
+            action: {})
+          QuestionView.Voting.VoteButton(
+            buttonType: .down,
+            highlighted: false,
+            action: {})
         }
         .previewDisplayName("Vote button configurations")
         QuestionView.Owner(
